@@ -29,5 +29,12 @@ public class Main {
         firstName = fullNameArray[1];
         middleName = fullNameArray[2];
         System.out.println("\nИмя сотрудника — " + lastName + "\nФамилия сотрудника — " + firstName + "\nОтчество сотрудника — " + middleName);
+
+        //Задание №4 методом substring (первый раз не увидел, что нужно с ним именно делать..)
+        lastName = fullName.substring(0, fullName.indexOf(" "));
+        firstName = fullName.substring(fullName.indexOf(" ") + 1, fullName.lastIndexOf(" "));
+        middleName = fullName.substring(fullName.lastIndexOf(" ") + 1, fullName.length());
+        System.out.println("\nИмя сотрудника — " + lastName + "\nФамилия сотрудника — " + firstName + "\nОтчество сотрудника — " + middleName);
+
     }
 }
