@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         //Задание №1
-        String firstName = "Иван";
-        String middleName = "Иванович";
+        String firstName = "Семён";
+        String middleName = "Семёнович";
         String lastName = "Иванов";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println("ФИО сотрудника - " + fullName);
@@ -12,5 +12,15 @@ public class Main {
         System.out.println();
         String fullNameUpperCase = fullName.toUpperCase();
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullNameUpperCase);
+
+        //Задание №3
+        System.out.println();
+        if (fullName.contains("ё") == false && fullName.contains("Ё") == false){
+            System.out.println(fullName);
+        } else{
+            String fullNameWithYo = fullName.replace("Ё", "Е");
+            fullNameWithYo = fullNameWithYo.replace("ё", "е");
+            System.out.println(fullNameWithYo);
+        }
     }
 }
