@@ -22,5 +22,12 @@ public class Main {
             fullNameWithYo = fullNameWithYo.replace("ё", "е");
             System.out.println(fullNameWithYo);
         }
+
+        //Задание №4
+        String[] fullNameArray = fullName.split(" ");
+        lastName = fullNameArray[0];
+        firstName = fullNameArray[1];
+        middleName = fullNameArray[2];
+        System.out.println("\n" + lastName + "\n" + firstName + "\n" + middleName);
     }
 }
