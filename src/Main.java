@@ -20,7 +20,7 @@ public class Main {
         } else{
             String fullNameWithYo = fullName.replace("Ё", "Е");
             fullNameWithYo = fullNameWithYo.replace("ё", "е");
-            System.out.println(fullNameWithYo);
+            System.out.println("Данные ФИО сотрудника — " + fullNameWithYo);
         }
 
         //Задание №4
@@ -28,6 +28,6 @@ public class Main {
         lastName = fullNameArray[0];
         firstName = fullNameArray[1];
         middleName = fullNameArray[2];
-        System.out.println("\n" + lastName + "\n" + firstName + "\n" + middleName);
+        System.out.println("\nИмя сотрудника — " + lastName + "\nФамилия сотрудника — " + firstName + "\nОтчество сотрудника — " + middleName);
     }
 }
