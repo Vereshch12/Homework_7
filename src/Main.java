@@ -65,5 +65,17 @@ public class Main {
         }
         String strFinal = String.valueOf(str);
         System.out.println("Данные строки — " + strFinal);
+
+        //НЕ ТО Задание №7 (простоизбавился от дублей)
+        System.out.println();
+        String str1 = "aabccddefgghiijjkk";
+        char[] str1Char = str1.toCharArray();
+        String str1Final = String.valueOf(str1Char[0]);
+        for (int i = 1; i < str1Char.length; i++){
+            if (str1Char[i] != str1Char[i-1]){
+                str1Final += String.valueOf(str1Char[i]);
+            }
+        }
+        System.out.println(str1Final);
     }
 }
