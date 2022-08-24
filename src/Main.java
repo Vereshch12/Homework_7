@@ -49,5 +49,21 @@ public class Main {
         String fullNameWithCapitalLetters = String.valueOf(fullNameChar);
         System.out.println("Верное написание Ф.И.О. сотрудника с заглавных букв — " + fullNameWithCapitalLetters);
 
+        //Задание №6
+        System.out.println();
+        String firstStr = "13579";
+        String secondStr = "24680";
+        char[] firstStrChar = firstStr.toCharArray();
+        char[] secondStrChar = secondStr.toCharArray();
+        char[] str = new char[secondStrChar.length + firstStrChar.length];
+        for (int i = 0; i < firstStrChar.length + secondStrChar.length; i++){
+            if (i % 2 == 0){
+                str[i] = firstStrChar[i / 2];
+            }else{
+                str[i] = secondStrChar[i / 2];
+            }
+        }
+        String strFinal = String.valueOf(str);
+        System.out.println("Данные строки — " + strFinal);
     }
 }
