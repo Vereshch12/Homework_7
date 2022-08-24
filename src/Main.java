@@ -77,5 +77,19 @@ public class Main {
             }
         }
         System.out.println(str1Final);
+
+        //Задание №7 (уже правильное))
+        System.out.println();
+        str1Final = "";
+        for (int i = 1; i < str1Char.length; i++){
+                if (str1Char[i] == str1Char[i-1]){
+                    if (str1Final.length() == 0) {
+                        str1Final += String.valueOf(str1Char[i]);
+                    }else if (str1Final.substring(str1Final.length() - 1) != String.valueOf(str1Char[i])){
+                        str1Final += String.valueOf(str1Char[i]);
+                     }
+                }
+        }
+        System.out.println(str1Final);
     }
 }
