@@ -46,6 +46,8 @@ public class Main {
                 fullNameChar[i + 1] = Character.toUpperCase(fullNameChar[i + 1]);
             }
         }
-        System.out.println(fullNameChar);
+        String fullNameWithCapitalLetters = String.valueOf(fullNameChar);
+        System.out.println("Верное написание Ф.И.О. сотрудника с заглавных букв — " + fullNameWithCapitalLetters);
+
     }
 }
