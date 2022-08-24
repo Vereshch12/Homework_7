@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
         //Задание №1
-        String firstName = "Семён";
-        String middleName = "Семёнович";
-        String lastName = "Иванов";
+        String firstName = "семён";
+        String middleName = "семёнович";
+        String lastName = "иванов";
         String fullName = lastName + " " + firstName + " " + middleName;
         System.out.println("ФИО сотрудника - " + fullName);
 
@@ -36,5 +36,16 @@ public class Main {
         middleName = fullName.substring(fullName.lastIndexOf(" ") + 1, fullName.length());
         System.out.println("\nИмя сотрудника — " + lastName + "\nФамилия сотрудника — " + firstName + "\nОтчество сотрудника — " + middleName);
 
+
+        //Задание №5
+        System.out.println();
+        char[] fullNameChar = fullName.toCharArray();
+        fullNameChar[0] = Character.toUpperCase(fullNameChar[0]);
+        for (int i = 1; i < fullNameChar.length; i++){
+            if (fullNameChar[i] == ' '){
+                fullNameChar[i + 1] = Character.toUpperCase(fullNameChar[i + 1]);
+            }
+        }
+        System.out.println(fullNameChar);
     }
 }
